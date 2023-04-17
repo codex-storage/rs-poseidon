@@ -117,6 +117,8 @@ mod tests {
         uint! {
             assert_eq!(hash(&[0_U256]), 0x2a09a9fd93c590c26b91effbb2499f07e8f7aa12e2b4940a3aed2411cb65e11c_U256);
             assert_eq!(hash(&[0_U256, 0_U256]), 0x2098f5fb9e239eab3ceac3f27b81e481dc3124d55ffed523a839ee8446b64864_U256);
+            assert_eq!(hash(&[1_U256, 2_U256]), 0x115cc0f5e7d690413df64c6b9662e9cf2a3617f2743245519e19607a4417189a_U256);
+            assert_eq!(hash(&[1_U256, 2_U256, 3_U256, 4_U256]), 0x299c867db6c1fdd79dcefa40e4510b9837e60ebb1ce0663dbaa525df65250465_U256);
             assert_eq!(hash(&[0_U256, 0_U256, 0_U256]), 0xbc188d27dcceadc1dcfb6af0a7af08fe2864eecec96c5ae7cee6db31ba599aa_U256);
             assert_eq!(hash(&[31213_U256, 132_U256]), 0x303f59cd0831b5633bcda50514521b33776b5d4280eb5868ba1dbbe2e4d76ab5_U256);
         }
